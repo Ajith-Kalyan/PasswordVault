@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:elevation="8dp"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_height"
+            android:layout_marginRight="@dimen/dot_margin_right"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorAccent"
+            android:lineSpacingExtra="0dp"
+            android:textSize="@dimen/dot_text_size" />
+
+        <TextView
+            android:id="@+id/txtwebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/note_list_text"
+            android:layout_toRightOf="@id/dot"
+            android:textColor="@color/colorGrey"
+            android:text="Details : "
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/note_list_text"
+            android:layout_toRightOf="@id/txtwebsite"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/note_list_text"
+            android:layout_below="@+id/txtwebsite"
+            android:layout_toRightOf="@id/dot"
+            android:textColor="@color/colorGrey"
+            android:text="Username : "
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/note_list_text"
+            android:layout_below="@id/website"
+            android:layout_toRightOf="@id/txtusername"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/txtpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/note_list_text"
+            android:layout_toRightOf="@id/dot"
+            android:layout_below="@+id/txtusername"
+            android:textColor="@color/colorGrey"
+            android:text="Password : "
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/txtpassword"
+            android:layout_height="@dimen/note_list_text" />
+<!--        <TextView
+            android:layout_below="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="1.3px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"/>-->
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
